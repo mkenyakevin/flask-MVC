@@ -1,0 +1,39 @@
+step 1
+python3.6 -m venv venv
+
+step 2
+source env/bin/activate
+
+step 3
+pip install -r requirements.txt
+
+also do a
+pip install orator
+on your server
+
+step 4
+We create all the migrations and models we will need
+
+To create a migration using the orator orm we run this command:
+orator make:migration create_users_table --table users --create
+
+To run the migration we run this command:
+orator migrate
+
+To rollback a migration we run this command:
+orator migrate:rollback
+
+To check the migration status we run this command:
+ orator migrate:status
+
+To create a model using the orator orm we run this command:
+orator make:model User
+
+To create a db seed run this command
+orator make:seed create_roles_table_seeder
+
+we then include the seeder classes on to the database_seeder file
+
+we then run the seeder using this command:
+orator db:seed
+
