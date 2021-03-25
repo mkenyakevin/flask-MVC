@@ -39,7 +39,7 @@ PyMySQL==0.9.3
 python-dateutil==2.8.0
 pytz==2018.9
 pytzdata==2018.9
-PyYAML==3.13
+PyYAML==5.4
 requests==2.21.0
 simplejson==3.16.0
 six==1.12.0
